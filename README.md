@@ -4,7 +4,7 @@
 
 This Client is based on my own [WebUntis Swift Framework](https://github.com/TheNoim/WebUntis-Swift). 
 
-I will propably not publish this app on the app store, but if you want to use it, you could compile it your self and use it. 
+I will probably not publish this app on the app store, but if you want to use it, you can compile it your self and use it. 
 
 ## Features
 
