@@ -76,7 +76,9 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         case .modularLarge:
             self.getWebUntisInstanceAndConfigure().then { webuntis in
                 webuntis.getTimetable(between: start, and: end, forceRefresh: false, startBackgroundRefresh: false).then { result in
-                    let sorted = result.getVisibleLessons().sorted(by: { $0.start < $1.start });
+                    let sorted = result.getVisibleLessons().filter({ lesson in
+                        return lesson.code != Code.Cancelled;
+                    }).sorted(by: { $0.start < $1.start });
                     var entries: [CLKComplicationTimelineEntry] = [];
                     for (index, lesson) in sorted.enumerated() {
                         if index == sorted.startIndex, start < lesson.start {
@@ -198,9 +200,9 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             if success, account != nil {
                 self.configureWebUntis(account: account!).then { untis in
                     return fulfill(untis);
-                }.catch { error in
-                    print("LoL");
-                    reject(error);
+                    }.catch { error in
+                        print("LoL");
+                        reject(error);
                 }
             } else {
                 reject(getWebUntisErrorBy(type: WebUntisError.UNAUTHORIZED, userInfo: nil));
@@ -228,8 +230,8 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
                 } else {
                     reject(getWebUntisErrorBy(type: WebUntisError.UNAUTHORIZED, userInfo: nil));
                 }
-            }.catch { error in
-                reject(error);
+                }.catch { error in
+                    reject(error);
             }
         }
     }

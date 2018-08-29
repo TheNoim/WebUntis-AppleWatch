@@ -167,6 +167,7 @@ class TimetableController: WKInterfaceController, WCSessionDelegate {
                 self.reloadDataButton.setTitle("Reload Data");
                 self.reloadDataButton.setBackgroundColor(UIColor.darkGray);
                 DispatchQueue.main.async {
+                    self.updateComplication();
                     self.updateUI(lessons: result);
                 };
             }.catch { error in
