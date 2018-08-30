@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="Welcome" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SitnuWatch_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" hidden="YES" text="Welcome" textAlignment="center" baselineAdjustment="alignCenters" id="S6U-99-UC6">
+                            <color key="textColor" red="1" green="0.89238226620000005" blue="0.087427422559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <imageView alignment="center" verticalAlignment="center" image="Activity1" id="GlC-gC-Ort"/>
+                        <label width="1" alignment="left" hidden="YES" text="You first need to configure the App." textAlignment="left" numberOfLines="0" id="RMM-eL-gzS">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
+                        <label width="1" alignment="left" hidden="YES" text="To do this, you need to open the iPhone App and follow the steps." textAlignment="left" numberOfLines="0" id="gna-mT-Wn0">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
+                        <label alignment="center" hidden="YES" text="Notice:" numberOfLines="0" id="LgM-Ex-Dud">
+                            <color key="textColor" red="1" green="0.011644906383057818" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label width="1" alignment="left" hidden="YES" text="Keep the Apple Watch Open whole until the configuration finished." textAlignment="left" numberOfLines="0" id="AsD-XZ-Srm">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <label width="1" height="1" alignment="left" hidden="YES" text="Loading..." textAlignment="center" numberOfLines="0" id="PzZ-6r-FSk">
+                            <fontDescription key="font" type="system" weight="black" pointSize="16"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="headline" destination="S6U-99-UC6" id="ugF-0k-bjv"/>
+                        <outlet property="loading" destination="PzZ-6r-FSk" id="kyF-Tx-ZmA"/>
+                        <outlet property="loadingAnimationImage" destination="GlC-gC-Ort" id="X8B-oO-Fuh"/>
+                        <outlet property="notice" destination="AsD-XZ-Srm" id="JBh-ag-FyM"/>
+                        <outlet property="noticeHeadline" destination="LgM-Ex-Dud" id="gXU-sg-5kA"/>
+                        <outlet property="text1" destination="RMM-eL-gzS" id="JO3-mh-WFN"/>
+                        <outlet property="text2" destination="gna-mT-Wn0" id="oIY-gp-Hx8"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="3" y="130"/>
+        </scene>
+        <!--Timetable-->
+        <scene sceneID="Wev-hF-kB1">
+            <objects>
+                <controller identifier="Timetable" id="ui3-sE-4lR" customClass="TimetableController" customModule="SitnuWatch_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Date" id="gY3-cn-eOC">
+                            <color key="textColor" red="1" green="0.9802428260601288" blue="0.01817969787596585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <separator alignment="left" id="NX1-fN-XqX"/>
+                        <table alignment="left" id="nuq-XK-QRg">
+                            <items>
+                                <tableRow identifier="NothingTodayRowController" id="9Wr-Xz-apc" customClass="NothingTodayRowController" customModule="SitnuWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="dsc-45-gvM">
+                                        <items>
+                                            <label width="1" height="1" alignment="left" text="Nothing" textAlignment="center" id="gyA-S0-mh4"/>
+                                        </items>
+                                        <color key="backgroundColor" red="1" green="0.011644906383057818" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                </tableRow>
+                                <tableRow identifier="LessonRowController" id="ISW-NJ-XGZ" customClass="LessonRowController" customModule="SitnuWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="FbA-Og-Bsf">
+                                        <items>
+                                            <label width="1" alignment="left" text="Deutsch" id="FEw-u7-Rn0">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                            <separator alignment="left" id="ILC-Bo-Tb9"/>
+                                            <group width="1" height="16" alignment="left" id="7UT-GR-upS">
+                                                <items>
+                                                    <label alignment="left" text="11:30" id="ikZ-0o-0bx">
+                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                    </label>
+                                                    <label alignment="left" text="-" id="mk7-39-hF0">
+                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                    </label>
+                                                    <label alignment="left" text="12:20" id="qdw-7R-szm">
+                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <timer width="1" alignment="left" textAlignment="left" format="abbreviated" id="BlN-Sw-SYv">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </timer>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="group" destination="FbA-Og-Bsf" id="A0V-cq-hZ9"/>
+                                        <outlet property="subjectLabel" destination="FEw-u7-Rn0" id="JwK-zh-1aM"/>
+                                        <outlet property="timeRangeEnd" destination="qdw-7R-szm" id="3BX-wE-W6s"/>
+                                        <outlet property="timeRangeGroup" destination="7UT-GR-upS" id="X7Y-I0-qIv"/>
+                                        <outlet property="timeRangeStart" destination="ikZ-0o-0bx" id="aVn-dN-lz6"/>
+                                        <outlet property="timer" destination="BlN-Sw-SYv" id="fpC-hO-ieu"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <separator alignment="left" id="tn8-zo-oMc"/>
+                        <button width="1" height="38" alignment="left" title="Next" id="brn-Gy-0dh">
+                            <connections>
+                                <action selector="nextAction" destination="ui3-sE-4lR" id="4Zo-jv-itz"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Back" id="SUM-64-7dq">
+                            <connections>
+                                <action selector="backAction" destination="ui3-sE-4lR" id="LiF-JR-Iyr"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="U5g-78-iev"/>
+                        <button width="1" alignment="left" title="Reload Data" id="RFP-qB-Wmi">
+                            <connections>
+                                <action selector="reloadData" destination="ui3-sE-4lR" id="z9t-et-eMs"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <menu key="menu" id="u2y-Rs-Swo">
+                        <items>
+                            <menuItem title="Today" icon="resume" id="tSQ-0e-hyH">
+                                <connections>
+                                    <action selector="backToToday" destination="ui3-sE-4lR" id="QMJ-u9-pYE"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="backButton" destination="SUM-64-7dq" id="Cg9-jg-YCP"/>
+                        <outlet property="headDate" destination="gY3-cn-eOC" id="sx5-6R-72S"/>
+                        <outlet property="nextButton" destination="brn-Gy-0dh" id="BoT-81-fuW"/>
+                        <outlet property="reloadDataButton" destination="RFP-qB-Wmi" id="Zg7-JA-8dg"/>
+                        <outlet property="timetable" destination="nuq-XK-QRg" id="mXC-Rw-87o"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="320" y="52"/>
+        </scene>
+        <!--LessonDetail-->
+        <scene sceneID="FYE-w5-1z0">
+            <objects>
+                <controller identifier="LessonDetail" id="Eym-CH-AT4" customClass="LessonDetaillnterfaceController" customModule="SitnuWatch_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Subject" id="s7N-tg-oVP">
+                            <color key="textColor" red="1" green="0.98024282610000002" blue="0.018179697880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <group width="1" alignment="left" id="5u0-qE-4XD">
+                            <items>
+                                <label alignment="left" text="Room:" id="GXb-SH-bhs">
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="13"/>
+                                </label>
+                                <label alignment="left" text="_room_" textAlignment="left" numberOfLines="0" id="tPN-It-7EM">
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="BaA-BP-KKT">
+                            <items>
+                                <label alignment="left" text="Teacher:" id="ZXg-DN-JkP">
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="13"/>
+                                </label>
+                                <label alignment="left" text="_teacher_" textAlignment="left" numberOfLines="0" id="JG4-1w-xQV">
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="tzY-6c-PFk">
+                            <items>
+                                <label alignment="left" text="Klassen:" id="Ns0-Rl-fox">
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="13"/>
+                                </label>
+                                <label alignment="left" text="_klassen_" textAlignment="left" numberOfLines="0" id="gqQ-Bw-Jqp">
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="5fO-tN-up8">
+                            <items>
+                                <label alignment="left" text="Course:" id="6Vv-nf-ses">
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="13"/>
+                                </label>
+                                <label alignment="left" text="_course_" textAlignment="left" numberOfLines="0" id="tcb-Eu-R1j">
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="fjn-Wj-9AR">
+                            <items>
+                                <label alignment="left" text="Text:" id="yqX-19-E9v">
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="13"/>
+                                </label>
+                                <label alignment="left" text="_text_" textAlignment="left" numberOfLines="0" id="RL2-lM-tcd">
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="tIU-hN-4TJ">
+                            <items>
+                                <label alignment="left" text="Sub Text:" id="NXa-O3-IQJ">
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="13"/>
+                                </label>
+                                <label alignment="left" text="Label" textAlignment="left" numberOfLines="0" id="ds7-wT-zb9">
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="RoomGroup" destination="5u0-qE-4XD" id="NLP-xY-hzq"/>
+                        <outlet property="course" destination="tcb-Eu-R1j" id="g9z-dx-2X9"/>
+                        <outlet property="courseGroup" destination="5fO-tN-up8" id="LB0-2c-8Em"/>
+                        <outlet property="klassen" destination="gqQ-Bw-Jqp" id="23T-Zt-zej"/>
+                        <outlet property="klassenGroup" destination="tzY-6c-PFk" id="zhR-IQ-qNB"/>
+                        <outlet property="room" destination="tPN-It-7EM" id="ebm-e6-ylI"/>
+                        <outlet property="subject" destination="s7N-tg-oVP" id="eVa-E0-956"/>
+                        <outlet property="subsGroup" destination="tIU-hN-4TJ" id="Z3l-Zy-LfY"/>
+                        <outlet property="subsText" destination="ds7-wT-zb9" id="r7A-ts-yKq"/>
+                        <outlet property="teacher" destination="JG4-1w-xQV" id="T5Y-Tf-7s7"/>
+                        <outlet property="teacherGroup" destination="BaA-BP-KKT" id="RTI-q9-AVK"/>
+                        <outlet property="text" destination="RL2-lM-tcd" id="dYC-aK-TiS"/>
+                        <outlet property="textGroup" destination="fjn-Wj-9AR" id="yrC-8z-epi"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="594" y="60"/>
+        </scene>
+    </scenes>
+</document>

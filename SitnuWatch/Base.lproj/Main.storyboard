@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="SitnuWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pTd-hy-ztg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHc-dC-xKg">
+                                        <rect key="frame" x="169" y="303" width="37" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ziy-yU-D5L">
+                                        <rect key="frame" x="87" y="318" width="200" height="30"/>
+                                        <state key="normal" title="Login with WebUntis account">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginModal" destination="BYZ-38-t0r" eventType="touchUpInside" id="h3M-nS-wmG"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ati-jP-0eU">
+                                        <rect key="frame" x="165" y="337" width="45" height="30"/>
+                                        <state key="normal" title="Delete">
+                                            <color key="titleColor" red="1" green="0.01164490638" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="delete" destination="BYZ-38-t0r" eventType="touchUpInside" id="LZa-Ql-yYX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ziy-yU-D5L" firstAttribute="centerY" secondItem="pTd-hy-ztg" secondAttribute="centerY" id="0RZ-8M-dgt"/>
+                                    <constraint firstItem="ziy-yU-D5L" firstAttribute="centerX" secondItem="pTd-hy-ztg" secondAttribute="centerX" id="2J7-iR-a3K"/>
+                                    <constraint firstItem="HHc-dC-xKg" firstAttribute="centerX" secondItem="pTd-hy-ztg" secondAttribute="centerX" id="5eG-m9-Cf7"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ati-jP-0eU" secondAttribute="trailing" id="j4S-dv-R4W"/>
+                                    <constraint firstItem="ati-jP-0eU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pTd-hy-ztg" secondAttribute="leading" id="orP-vE-0uj"/>
+                                    <constraint firstAttribute="bottom" secondItem="ati-jP-0eU" secondAttribute="bottom" constant="300" id="sV0-Kc-OYD"/>
+                                    <constraint firstItem="ati-jP-0eU" firstAttribute="centerX" secondItem="pTd-hy-ztg" secondAttribute="centerX" id="usL-3t-clY"/>
+                                    <constraint firstItem="HHc-dC-xKg" firstAttribute="top" secondItem="pTd-hy-ztg" secondAttribute="top" constant="303" id="zEo-tK-RG6"/>
+                                    <constraint firstItem="ati-jP-0eU" firstAttribute="top" secondItem="HHc-dC-xKg" secondAttribute="bottom" constant="13.5" id="zot-cr-aKE"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pTd-hy-ztg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8As-dX-daJ"/>
+                            <constraint firstItem="pTd-hy-ztg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UYX-Mo-QKe"/>
+                            <constraint firstItem="pTd-hy-ztg" firstAttribute="trailing" secondItem="Uee-0j-aNJ" secondAttribute="trailing" id="VWa-wB-TAp"/>
+                            <constraint firstItem="pTd-hy-ztg" firstAttribute="bottom" secondItem="Uee-0j-aNJ" secondAttribute="bottom" id="Z2J-pp-M44"/>
+                            <constraint firstItem="pTd-hy-ztg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="izR-Ue-V2K"/>
+                            <constraint firstItem="pTd-hy-ztg" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" id="olu-Gj-mqh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="controller" destination="8bC-Xf-vdC" id="gjC-Ad-0Xw"/>
+                        <outlet property="deleteButton" destination="ati-jP-0eU" id="PJE-hw-koi"/>
+                        <outlet property="loginButton" destination="ziy-yU-D5L" id="jjs-VM-qcV"/>
+                        <outlet property="scrollView" destination="pTd-hy-ztg" id="Vf4-Co-C3u"/>
+                        <outlet property="userLabel" destination="HHc-dC-xKg" id="XAr-h7-GZK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="117.39130434782609"/>
+        </scene>
+        <!--Login Controller-->
+        <scene sceneID="4l6-yf-Gfb">
+            <objects>
+                <viewController id="7IJ-4t-r63" customClass="LoginController" customModule="SitnuWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x56-Wt-5Xg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5O-tp-Ybk">
+                                <rect key="frame" x="16" y="20" width="51" height="30"/>
+                                <state key="normal" title="Cancell"/>
+                                <connections>
+                                    <action selector="onCancell:" destination="7IJ-4t-r63" eventType="touchDown" id="cFr-4G-mQi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="H5O-tp-Ybk" firstAttribute="leading" secondItem="8H9-oA-Sgg" secondAttribute="leading" constant="16" id="pW3-HY-4FU"/>
+                            <constraint firstItem="H5O-tp-Ybk" firstAttribute="top" secondItem="8H9-oA-Sgg" secondAttribute="top" id="xv3-GL-srO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8H9-oA-Sgg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hvx-UL-VdG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="117"/>
+        </scene>
+    </scenes>
+</document>

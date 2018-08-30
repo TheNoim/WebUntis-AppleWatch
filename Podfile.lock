@@ -1,0 +1,125 @@
+PODS:
+  - Alamofire (4.7.3)
+  - CryptoSwift (0.11.0)
+  - ESPullToRefresh (2.7)
+  - Form (3.15.0):
+    - HYP8601 (~> 0.7.2)
+    - HYPMathParser (~> 0.4.1)
+    - HYPNorwegianAccountNumber (~> 1.2.1)
+    - HYPNorwegianSSN (~> 1.10.2)
+    - NSDictionary-ANDYSafeValue (~> 0.3)
+    - NSDictionary-HYPNestedAttributes (~> 0.4.1)
+    - NSJSONSerialization-ANDYJSONFile (~> 1.1)
+    - NSObject-HYPTesting (~> 1.2.1)
+    - NSString-HYPContainsString (~> 0.1)
+    - NSString-HYPFormula (~> 1.6.2)
+    - NSString-HYPRelationshipParser (~> 0.4.1)
+    - NSString-HYPWordExtractor (~> 1.2)
+    - NSString-ZENInflections (~> 1.2)
+    - UIViewController-HYPKeyboardToolbar (~> 0.1)
+  - HYP8601 (0.7.2)
+  - HYPMathParser (0.4.1)
+  - HYPNorwegianAccountNumber (1.2.1)
+  - HYPNorwegianSSN (1.10.2)
+  - Locksmith (4.0.0)
+  - NSDictionary-ANDYSafeValue (0.3.1)
+  - NSDictionary-HYPNestedAttributes (0.4.1):
+    - NSString-HYPRelationshipParser (~> 0.4.1)
+  - NSJSONSerialization-ANDYJSONFile (1.1)
+  - NSObject-HYPTesting (1.2.1)
+  - NSString-HYPContainsString (0.1)
+  - NSString-HYPFormula (1.6.2):
+    - NSString-HYPWordExtractor
+  - NSString-HYPRelationshipParser (0.4.1)
+  - NSString-HYPWordExtractor (1.2)
+  - NSString-ZENInflections (1.2)
+  - PromisesObjC (1.2.3)
+  - PromisesSwift (1.2.3):
+    - PromisesObjC (= 1.2.3)
+  - Realm (3.7.6):
+    - Realm/Headers (= 3.7.6)
+  - Realm/Headers (3.7.6)
+  - RealmSwift (3.7.6):
+    - Realm (= 3.7.6)
+  - SVProgressHUD (2.2.5)
+  - UIViewController-HYPKeyboardToolbar (0.1)
+  - WebUntis (1.0.9):
+    - Alamofire (~> 4.7)
+    - CryptoSwift (~> 0.11.0)
+    - PromisesSwift (~> 1.2.3)
+    - RealmSwift (~> 3.7.6)
+
+DEPENDENCIES:
+  - ESPullToRefresh
+  - Form
+  - Locksmith
+  - PromisesSwift (~> 1.2.3)
+  - SVProgressHUD
+  - WebUntis (from `https://github.com/TheNoim/WebUntis-Swift.git`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CryptoSwift
+    - ESPullToRefresh
+    - Form
+    - HYP8601
+    - HYPMathParser
+    - HYPNorwegianAccountNumber
+    - HYPNorwegianSSN
+    - Locksmith
+    - NSDictionary-ANDYSafeValue
+    - NSDictionary-HYPNestedAttributes
+    - NSJSONSerialization-ANDYJSONFile
+    - NSObject-HYPTesting
+    - NSString-HYPContainsString
+    - NSString-HYPFormula
+    - NSString-HYPRelationshipParser
+    - NSString-HYPWordExtractor
+    - NSString-ZENInflections
+    - PromisesObjC
+    - PromisesSwift
+    - Realm
+    - RealmSwift
+    - SVProgressHUD
+    - UIViewController-HYPKeyboardToolbar
+
+EXTERNAL SOURCES:
+  WebUntis:
+    :git: https://github.com/TheNoim/WebUntis-Swift.git
+
+CHECKOUT OPTIONS:
+  WebUntis:
+    :commit: 7c4e3d750792da0a15515b1c8010dcb67182c79b
+    :git: https://github.com/TheNoim/WebUntis-Swift.git
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  CryptoSwift: ad5208dd2aae0a764ea4ce2c2d34bd067cae67f0
+  ESPullToRefresh: 119e2710b82b75536aab2bbe4883ba119fca35c8
+  Form: c8c0a0ee4d4b9f0966726ec072c03c5bb2abfb1a
+  HYP8601: 0118757c1332620748c75e7218e7b6b849686d06
+  HYPMathParser: 146a4981427a0b46cc9af823b210bfefdf0a7107
+  HYPNorwegianAccountNumber: b0062d7419d217123dff0ef04f1931ed5f1e3bbf
+  HYPNorwegianSSN: 1eb54f1488ac24cdd7d0aee34e10d0f826c27fc1
+  Locksmith: e9bebbaaa4cee3c511bc358a44f843c3fe00e21f
+  NSDictionary-ANDYSafeValue: 2d7adf339b6e302d71fec5f1d71ae00aacda993e
+  NSDictionary-HYPNestedAttributes: 783d3adcf9f8e9a554004ee225f1bc0cdf0cfdfe
+  NSJSONSerialization-ANDYJSONFile: 4a92ca174d5ccde13015e853e9eb62440459b478
+  NSObject-HYPTesting: 841d94a3ff4c697f84256f97c45829fc3b35a9fe
+  NSString-HYPContainsString: a8147bbb90b9aca02f69d12546b4d2938a5d01dc
+  NSString-HYPFormula: c1d166886afd1cfd139f24ab01bd63ad8f4cc360
+  NSString-HYPRelationshipParser: 7fa231131e408f26b3b72a41157aa6620a195b4d
+  NSString-HYPWordExtractor: 7484da8d2d23e41b24b0bdb218293ab349f9f650
+  NSString-ZENInflections: 35ae6d02981b1def07bd6dc8e6455e827453bc29
+  PromisesObjC: a3a4263d8a9260214267e0b3788d0f83466ad449
+  PromisesSwift: f7f45c21986419e85f7c5b645ed8c6a2c10c04b4
+  Realm: 9eaecad54712d6246d08ba34c10f354e4715d7d3
+  RealmSwift: 1fe08b4ebaeeaacf17f9ba0343f7b25c9fc31fa6
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  UIViewController-HYPKeyboardToolbar: d5cb85447caeaf9e0e7ed575ce3b1576c7d53dd8
+  WebUntis: faa74286a878e0ae8273a82040abc79743377f69
+
+PODFILE CHECKSUM: 83be0a0814525e91b6b680e13386ad6a9d86cc71
+
+COCOAPODS: 1.6.0.beta.1
