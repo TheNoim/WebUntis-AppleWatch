@@ -1,0 +1,69 @@
+{
+    "groups": [
+               {
+               "id": "login",
+               "title": "WebUntis Login",
+               "sections": [
+                            {
+                            "id": "server-settings",
+                            "fields": [
+                                       {
+                                       "id": "server-url",
+                                       "title": "Server",
+                                       "type": "text",
+                                       "validations":{
+                                       "required": true,
+                                       "min_length": 14
+                                       }
+                                       },
+                                       {
+                                       "id": "school",
+                                       "title": "School Identifier",
+                                       "type": "text",
+                                       "validations":{
+                                       "required": true,
+                                       "min_length": 4
+                                       }
+                                       }
+                                       ]
+                            },
+                            {
+                            "id": "credentials",
+                            "fields": [
+                                       {
+                                       "id": "username",
+                                       "title": "Username",
+                                       "type": "text",
+                                       "validations":{
+                                       "required": true
+                                       }
+                                       },
+                                       {
+                                       "id": "password",
+                                       "title": "Password",
+                                       "type": "password",
+                                       "validations":{
+                                       "required": true
+                                       }
+                                       }
+                                       ]
+                            },
+                            {
+                            "id": "submit-section",
+                            "fields": [
+                                       {
+                                       "id": "submit-button",
+                                       "type": "button",
+                                       "title": "Login"
+                                       },
+                                       {
+                                       "id": "cancel",
+                                       "type": "button",
+                                       "title": "Cancel"
+                                       }
+                                       ]
+                            }
+                            ]
+               }
+               ]
+}

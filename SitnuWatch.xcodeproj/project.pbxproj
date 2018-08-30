@@ -1,0 +1,1009 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B01D7E9E7AEB869D3801627 /* Pods_SitnuWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A81BF751F26275178B7A42 /* Pods_SitnuWatch.framework */; };
+		610601D8FF92A306CB71E031 /* Pods_SitnuWatch_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55523CA94B0D4AA9A7AFCC00 /* Pods_SitnuWatch_WatchKit_App.framework */; };
+		933934CF2BBFB8A416D5A54C /* Pods_SitnuWatch_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C2B37F84B07AD29219DC46 /* Pods_SitnuWatch_WatchKit_Extension.framework */; };
+		FBCD7F9821381E4A00226807 /* Form.json in Resources */ = {isa = PBXBuildFile; fileRef = FBCD7F9721381E4A00226807 /* Form.json */; };
+		FBCFF1802137E99A001141E2 /* WebUntisManageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCFF17F2137E99A001141E2 /* WebUntisManageUtility.swift */; };
+		FBCFF1852137F68E001141E2 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCFF1842137F68E001141E2 /* SVProgressHUD.framework */; };
+		FBCFF1872137F85E001141E2 /* Promises.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCFF1862137F85E001141E2 /* Promises.framework */; };
+		FBCFF18921380167001141E2 /* ESPullToRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCFF18821380167001141E2 /* ESPullToRefresh.framework */; };
+		FBCFF18B213813F4001141E2 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCFF18A213813F4001141E2 /* LoginController.swift */; };
+		FBCFF18D21381B42001141E2 /* Form.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCFF18C21381B42001141E2 /* Form.framework */; };
+		FBF7075B2137353900DF444F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF7075A2137353900DF444F /* AppDelegate.swift */; };
+		FBF7075D2137353900DF444F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF7075C2137353900DF444F /* ViewController.swift */; };
+		FBF707602137353900DF444F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF7075E2137353900DF444F /* Main.storyboard */; };
+		FBF707622137353A00DF444F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF707612137353A00DF444F /* Assets.xcassets */; };
+		FBF7076A2137353A00DF444F /* SitnuWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FBF707692137353A00DF444F /* SitnuWatch WatchKit App.app */; };
+		FBF707722137353A00DF444F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF707712137353A00DF444F /* Assets.xcassets */; };
+		FBF707792137353A00DF444F /* SitnuWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FBF707782137353A00DF444F /* SitnuWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FBF707822137353B00DF444F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF707812137353B00DF444F /* Assets.xcassets */; };
+		FBF7079F2137367E00DF444F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF7079E2137367E00DF444F /* Interface.storyboard */; };
+		FBF707A72137369A00DF444F /* TimetableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF707A12137369A00DF444F /* TimetableController.swift */; };
+		FBF707A82137369A00DF444F /* WebUntisAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF707A22137369A00DF444F /* WebUntisAccount.swift */; };
+		FBF707AA2137369A00DF444F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF707A42137369A00DF444F /* InterfaceController.swift */; };
+		FBF707AB2137369A00DF444F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF707A52137369A00DF444F /* ComplicationController.swift */; };
+		FBF707AC2137369A00DF444F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF707A62137369A00DF444F /* ExtensionDelegate.swift */; };
+		FBF707B1213736B300DF444F /* LessonRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF707AE213736B300DF444F /* LessonRowController.swift */; };
+		FBF707B2213736B300DF444F /* LessonDetaillnterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF707AF213736B300DF444F /* LessonDetaillnterfaceController.swift */; };
+		FBF707B3213736B300DF444F /* NothingTodayRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF707B0213736B300DF444F /* NothingTodayRowController.swift */; };
+		FBF707C2213738D400DF444F /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF707C1213738D400DF444F /* Utility.swift */; };
+		FBF707E121373CA700DF444F /* Activity21@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707C321373CA400DF444F /* Activity21@2x.png */; };
+		FBF707E221373CA700DF444F /* Activity19@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707C421373CA400DF444F /* Activity19@2x.png */; };
+		FBF707E321373CA700DF444F /* Activity20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707C521373CA400DF444F /* Activity20@2x.png */; };
+		FBF707E421373CA700DF444F /* Activity11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707C621373CA400DF444F /* Activity11@2x.png */; };
+		FBF707E521373CA700DF444F /* Activity9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707C721373CA400DF444F /* Activity9@2x.png */; };
+		FBF707E621373CA700DF444F /* Activity8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707C821373CA400DF444F /* Activity8@2x.png */; };
+		FBF707E721373CA700DF444F /* Activity13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707C921373CA400DF444F /* Activity13@2x.png */; };
+		FBF707E821373CA700DF444F /* Activity1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707CA21373CA400DF444F /* Activity1@2x.png */; };
+		FBF707E921373CA700DF444F /* Activity16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707CB21373CA400DF444F /* Activity16@2x.png */; };
+		FBF707EA21373CA700DF444F /* Activity12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707CC21373CA400DF444F /* Activity12@2x.png */; };
+		FBF707EB21373CA700DF444F /* Activity17@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707CD21373CA500DF444F /* Activity17@2x.png */; };
+		FBF707EC21373CA700DF444F /* Activity2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707CE21373CA500DF444F /* Activity2@2x.png */; };
+		FBF707ED21373CA700DF444F /* Activity25@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707CF21373CA500DF444F /* Activity25@2x.png */; };
+		FBF707EE21373CA700DF444F /* Activity27@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707D021373CA500DF444F /* Activity27@2x.png */; };
+		FBF707EF21373CA700DF444F /* Activity26@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707D121373CA500DF444F /* Activity26@2x.png */; };
+		FBF707F021373CA700DF444F /* Activity3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707D221373CA500DF444F /* Activity3@2x.png */; };
+		FBF707F121373CA700DF444F /* Activity30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707D321373CA500DF444F /* Activity30@2x.png */; };
+		FBF707F221373CA700DF444F /* Activity15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707D421373CA500DF444F /* Activity15@2x.png */; };
+		FBF707F321373CA700DF444F /* Activity29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707D521373CA500DF444F /* Activity29@2x.png */; };
+		FBF707F421373CA700DF444F /* Activity4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707D621373CA500DF444F /* Activity4@2x.png */; };
+		FBF707F521373CA700DF444F /* Activity18@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707D721373CA600DF444F /* Activity18@2x.png */; };
+		FBF707F621373CA700DF444F /* Activity5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707D821373CA600DF444F /* Activity5@2x.png */; };
+		FBF707F721373CA700DF444F /* Activity22@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707D921373CA600DF444F /* Activity22@2x.png */; };
+		FBF707F821373CA700DF444F /* Activity28@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707DA21373CA600DF444F /* Activity28@2x.png */; };
+		FBF707F921373CA700DF444F /* Activity24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707DB21373CA600DF444F /* Activity24@2x.png */; };
+		FBF707FA21373CA700DF444F /* Activity7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707DC21373CA600DF444F /* Activity7@2x.png */; };
+		FBF707FB21373CA700DF444F /* Activity10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707DD21373CA600DF444F /* Activity10@2x.png */; };
+		FBF707FC21373CA700DF444F /* Activity14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707DE21373CA600DF444F /* Activity14@2x.png */; };
+		FBF707FD21373CA700DF444F /* Activity23@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707DF21373CA600DF444F /* Activity23@2x.png */; };
+		FBF707FE21373CA700DF444F /* Activity6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF707E021373CA600DF444F /* Activity6@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBF7076B2137353A00DF444F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBF7074F2137353900DF444F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBF707682137353A00DF444F;
+			remoteInfo = "SitnuWatch WatchKit App";
+		};
+		FBF7077A2137353A00DF444F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBF7074F2137353900DF444F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBF707772137353A00DF444F;
+			remoteInfo = "SitnuWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FBF707892137353B00DF444F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FBF707792137353A00DF444F /* SitnuWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF7078D2137353B00DF444F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FBF7076A2137353A00DF444F /* SitnuWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0DFA810450D1C6173AE3E1DF /* Pods-SitnuWatch WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SitnuWatch WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-SitnuWatch WatchKit App/Pods-SitnuWatch WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		55523CA94B0D4AA9A7AFCC00 /* Pods_SitnuWatch_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SitnuWatch_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5568FAFFDD906FC855EB5C23 /* Pods-SitnuWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SitnuWatch.debug.xcconfig"; path = "Target Support Files/Pods-SitnuWatch/Pods-SitnuWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		82C2B37F84B07AD29219DC46 /* Pods_SitnuWatch_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SitnuWatch_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C04C1C04556910D75B402F6 /* Pods-SitnuWatch WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SitnuWatch WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-SitnuWatch WatchKit App/Pods-SitnuWatch WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		9911CF0B852D50EABEAB1A41 /* Pods-SitnuWatch WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SitnuWatch WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-SitnuWatch WatchKit Extension/Pods-SitnuWatch WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		BA9D3EB4A12BA922001E5C72 /* Pods-SitnuWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SitnuWatch.release.xcconfig"; path = "Target Support Files/Pods-SitnuWatch/Pods-SitnuWatch.release.xcconfig"; sourceTree = "<group>"; };
+		F0A81BF751F26275178B7A42 /* Pods_SitnuWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SitnuWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBCD7F9721381E4A00226807 /* Form.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Form.json; sourceTree = "<group>"; };
+		FBCFF17F2137E99A001141E2 /* WebUntisManageUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebUntisManageUtility.swift; sourceTree = "<group>"; };
+		FBCFF1842137F68E001141E2 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBCFF1862137F85E001141E2 /* Promises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Promises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBCFF18821380167001141E2 /* ESPullToRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ESPullToRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBCFF18A213813F4001141E2 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		FBCFF18C21381B42001141E2 /* Form.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Form.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF707572137353900DF444F /* SitnuWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SitnuWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF7075A2137353900DF444F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBF7075C2137353900DF444F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBF7075F2137353900DF444F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBF707612137353A00DF444F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBF707662137353A00DF444F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBF707692137353A00DF444F /* SitnuWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SitnuWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF707712137353A00DF444F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBF707732137353A00DF444F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBF707782137353A00DF444F /* SitnuWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SitnuWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF707812137353B00DF444F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBF707832137353B00DF444F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBF7079E2137367E00DF444F /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		FBF707A02137369900DF444F /* SitnuWatch WatchKit Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SitnuWatch WatchKit Extension-Bridging-Header.h"; sourceTree = "<group>"; };
+		FBF707A12137369A00DF444F /* TimetableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimetableController.swift; sourceTree = "<group>"; };
+		FBF707A22137369A00DF444F /* WebUntisAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebUntisAccount.swift; sourceTree = "<group>"; };
+		FBF707A42137369A00DF444F /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		FBF707A52137369A00DF444F /* ComplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		FBF707A62137369A00DF444F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FBF707AE213736B300DF444F /* LessonRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonRowController.swift; sourceTree = "<group>"; };
+		FBF707AF213736B300DF444F /* LessonDetaillnterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonDetaillnterfaceController.swift; sourceTree = "<group>"; };
+		FBF707B0213736B300DF444F /* NothingTodayRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NothingTodayRowController.swift; sourceTree = "<group>"; };
+		FBF707C1213738D400DF444F /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		FBF707C321373CA400DF444F /* Activity21@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity21@2x.png"; sourceTree = "<group>"; };
+		FBF707C421373CA400DF444F /* Activity19@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity19@2x.png"; sourceTree = "<group>"; };
+		FBF707C521373CA400DF444F /* Activity20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity20@2x.png"; sourceTree = "<group>"; };
+		FBF707C621373CA400DF444F /* Activity11@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity11@2x.png"; sourceTree = "<group>"; };
+		FBF707C721373CA400DF444F /* Activity9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity9@2x.png"; sourceTree = "<group>"; };
+		FBF707C821373CA400DF444F /* Activity8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity8@2x.png"; sourceTree = "<group>"; };
+		FBF707C921373CA400DF444F /* Activity13@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity13@2x.png"; sourceTree = "<group>"; };
+		FBF707CA21373CA400DF444F /* Activity1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity1@2x.png"; sourceTree = "<group>"; };
+		FBF707CB21373CA400DF444F /* Activity16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity16@2x.png"; sourceTree = "<group>"; };
+		FBF707CC21373CA400DF444F /* Activity12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity12@2x.png"; sourceTree = "<group>"; };
+		FBF707CD21373CA500DF444F /* Activity17@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity17@2x.png"; sourceTree = "<group>"; };
+		FBF707CE21373CA500DF444F /* Activity2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity2@2x.png"; sourceTree = "<group>"; };
+		FBF707CF21373CA500DF444F /* Activity25@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity25@2x.png"; sourceTree = "<group>"; };
+		FBF707D021373CA500DF444F /* Activity27@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity27@2x.png"; sourceTree = "<group>"; };
+		FBF707D121373CA500DF444F /* Activity26@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity26@2x.png"; sourceTree = "<group>"; };
+		FBF707D221373CA500DF444F /* Activity3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity3@2x.png"; sourceTree = "<group>"; };
+		FBF707D321373CA500DF444F /* Activity30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity30@2x.png"; sourceTree = "<group>"; };
+		FBF707D421373CA500DF444F /* Activity15@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity15@2x.png"; sourceTree = "<group>"; };
+		FBF707D521373CA500DF444F /* Activity29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity29@2x.png"; sourceTree = "<group>"; };
+		FBF707D621373CA500DF444F /* Activity4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity4@2x.png"; sourceTree = "<group>"; };
+		FBF707D721373CA600DF444F /* Activity18@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity18@2x.png"; sourceTree = "<group>"; };
+		FBF707D821373CA600DF444F /* Activity5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity5@2x.png"; sourceTree = "<group>"; };
+		FBF707D921373CA600DF444F /* Activity22@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity22@2x.png"; sourceTree = "<group>"; };
+		FBF707DA21373CA600DF444F /* Activity28@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity28@2x.png"; sourceTree = "<group>"; };
+		FBF707DB21373CA600DF444F /* Activity24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity24@2x.png"; sourceTree = "<group>"; };
+		FBF707DC21373CA600DF444F /* Activity7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity7@2x.png"; sourceTree = "<group>"; };
+		FBF707DD21373CA600DF444F /* Activity10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity10@2x.png"; sourceTree = "<group>"; };
+		FBF707DE21373CA600DF444F /* Activity14@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity14@2x.png"; sourceTree = "<group>"; };
+		FBF707DF21373CA600DF444F /* Activity23@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity23@2x.png"; sourceTree = "<group>"; };
+		FBF707E021373CA600DF444F /* Activity6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity6@2x.png"; sourceTree = "<group>"; };
+		FECE80CE46FCCD07A99C76D2 /* Pods-SitnuWatch WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SitnuWatch WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-SitnuWatch WatchKit Extension/Pods-SitnuWatch WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBF707542137353900DF444F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBCFF18D21381B42001141E2 /* Form.framework in Frameworks */,
+				FBCFF18921380167001141E2 /* ESPullToRefresh.framework in Frameworks */,
+				FBCFF1872137F85E001141E2 /* Promises.framework in Frameworks */,
+				FBCFF1852137F68E001141E2 /* SVProgressHUD.framework in Frameworks */,
+				4B01D7E9E7AEB869D3801627 /* Pods_SitnuWatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF707752137353A00DF444F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				933934CF2BBFB8A416D5A54C /* Pods_SitnuWatch_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF9DC6B1BB0997AB531873CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				610601D8FF92A306CB71E031 /* Pods_SitnuWatch_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		489D1F3CE74A448F04CE699A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5568FAFFDD906FC855EB5C23 /* Pods-SitnuWatch.debug.xcconfig */,
+				BA9D3EB4A12BA922001E5C72 /* Pods-SitnuWatch.release.xcconfig */,
+				8C04C1C04556910D75B402F6 /* Pods-SitnuWatch WatchKit App.debug.xcconfig */,
+				0DFA810450D1C6173AE3E1DF /* Pods-SitnuWatch WatchKit App.release.xcconfig */,
+				9911CF0B852D50EABEAB1A41 /* Pods-SitnuWatch WatchKit Extension.debug.xcconfig */,
+				FECE80CE46FCCD07A99C76D2 /* Pods-SitnuWatch WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		724B6C89978D0267B619EB7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBCFF18C21381B42001141E2 /* Form.framework */,
+				FBCFF18821380167001141E2 /* ESPullToRefresh.framework */,
+				FBCFF1862137F85E001141E2 /* Promises.framework */,
+				FBCFF1842137F68E001141E2 /* SVProgressHUD.framework */,
+				F0A81BF751F26275178B7A42 /* Pods_SitnuWatch.framework */,
+				55523CA94B0D4AA9A7AFCC00 /* Pods_SitnuWatch_WatchKit_App.framework */,
+				82C2B37F84B07AD29219DC46 /* Pods_SitnuWatch_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBF7074E2137353900DF444F = {
+			isa = PBXGroup;
+			children = (
+				FBF707592137353900DF444F /* SitnuWatch */,
+				FBF7076D2137353A00DF444F /* SitnuWatch WatchKit App */,
+				FBF7077C2137353A00DF444F /* SitnuWatch WatchKit Extension */,
+				FBF707582137353900DF444F /* Products */,
+				489D1F3CE74A448F04CE699A /* Pods */,
+				724B6C89978D0267B619EB7B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FBF707582137353900DF444F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBF707572137353900DF444F /* SitnuWatch.app */,
+				FBF707692137353A00DF444F /* SitnuWatch WatchKit App.app */,
+				FBF707782137353A00DF444F /* SitnuWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBF707592137353900DF444F /* SitnuWatch */ = {
+			isa = PBXGroup;
+			children = (
+				FBF7075A2137353900DF444F /* AppDelegate.swift */,
+				FBF7075C2137353900DF444F /* ViewController.swift */,
+				FBF7075E2137353900DF444F /* Main.storyboard */,
+				FBF707612137353A00DF444F /* Assets.xcassets */,
+				FBF707662137353A00DF444F /* Info.plist */,
+				FBCFF18A213813F4001141E2 /* LoginController.swift */,
+				FBCD7F9721381E4A00226807 /* Form.json */,
+			);
+			path = SitnuWatch;
+			sourceTree = "<group>";
+		};
+		FBF7076D2137353A00DF444F /* SitnuWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FBF707FF21373CAC00DF444F /* Activity */,
+				FBF7079E2137367E00DF444F /* Interface.storyboard */,
+				FBF707712137353A00DF444F /* Assets.xcassets */,
+				FBF707732137353A00DF444F /* Info.plist */,
+			);
+			path = "SitnuWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		FBF7077C2137353A00DF444F /* SitnuWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FBF707AD213736A900DF444F /* Timetable */,
+				FBF707A52137369A00DF444F /* ComplicationController.swift */,
+				FBF707A62137369A00DF444F /* ExtensionDelegate.swift */,
+				FBF707A42137369A00DF444F /* InterfaceController.swift */,
+				FBF707A12137369A00DF444F /* TimetableController.swift */,
+				FBF707A22137369A00DF444F /* WebUntisAccount.swift */,
+				FBF707812137353B00DF444F /* Assets.xcassets */,
+				FBF707832137353B00DF444F /* Info.plist */,
+				FBF707A02137369900DF444F /* SitnuWatch WatchKit Extension-Bridging-Header.h */,
+				FBF707C1213738D400DF444F /* Utility.swift */,
+				FBCFF17F2137E99A001141E2 /* WebUntisManageUtility.swift */,
+			);
+			path = "SitnuWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		FBF707AD213736A900DF444F /* Timetable */ = {
+			isa = PBXGroup;
+			children = (
+				FBF707AF213736B300DF444F /* LessonDetaillnterfaceController.swift */,
+				FBF707AE213736B300DF444F /* LessonRowController.swift */,
+				FBF707B0213736B300DF444F /* NothingTodayRowController.swift */,
+			);
+			path = Timetable;
+			sourceTree = "<group>";
+		};
+		FBF707FF21373CAC00DF444F /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				FBF707CA21373CA400DF444F /* Activity1@2x.png */,
+				FBF707CE21373CA500DF444F /* Activity2@2x.png */,
+				FBF707D221373CA500DF444F /* Activity3@2x.png */,
+				FBF707D621373CA500DF444F /* Activity4@2x.png */,
+				FBF707D821373CA600DF444F /* Activity5@2x.png */,
+				FBF707E021373CA600DF444F /* Activity6@2x.png */,
+				FBF707DC21373CA600DF444F /* Activity7@2x.png */,
+				FBF707C821373CA400DF444F /* Activity8@2x.png */,
+				FBF707C721373CA400DF444F /* Activity9@2x.png */,
+				FBF707DD21373CA600DF444F /* Activity10@2x.png */,
+				FBF707C621373CA400DF444F /* Activity11@2x.png */,
+				FBF707CC21373CA400DF444F /* Activity12@2x.png */,
+				FBF707C921373CA400DF444F /* Activity13@2x.png */,
+				FBF707DE21373CA600DF444F /* Activity14@2x.png */,
+				FBF707D421373CA500DF444F /* Activity15@2x.png */,
+				FBF707CB21373CA400DF444F /* Activity16@2x.png */,
+				FBF707CD21373CA500DF444F /* Activity17@2x.png */,
+				FBF707D721373CA600DF444F /* Activity18@2x.png */,
+				FBF707C421373CA400DF444F /* Activity19@2x.png */,
+				FBF707C521373CA400DF444F /* Activity20@2x.png */,
+				FBF707C321373CA400DF444F /* Activity21@2x.png */,
+				FBF707D921373CA600DF444F /* Activity22@2x.png */,
+				FBF707DF21373CA600DF444F /* Activity23@2x.png */,
+				FBF707DB21373CA600DF444F /* Activity24@2x.png */,
+				FBF707CF21373CA500DF444F /* Activity25@2x.png */,
+				FBF707D121373CA500DF444F /* Activity26@2x.png */,
+				FBF707D021373CA500DF444F /* Activity27@2x.png */,
+				FBF707DA21373CA600DF444F /* Activity28@2x.png */,
+				FBF707D521373CA500DF444F /* Activity29@2x.png */,
+				FBF707D321373CA500DF444F /* Activity30@2x.png */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBF707562137353900DF444F /* SitnuWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBF7078E2137353B00DF444F /* Build configuration list for PBXNativeTarget "SitnuWatch" */;
+			buildPhases = (
+				C83BACF0E3B9A5F945F3E18C /* [CP] Check Pods Manifest.lock */,
+				FBF707532137353900DF444F /* Sources */,
+				FBF707542137353900DF444F /* Frameworks */,
+				FBF707552137353900DF444F /* Resources */,
+				FBF7078D2137353B00DF444F /* Embed Watch Content */,
+				A4C6E92A45345ED41D778160 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBF7076C2137353A00DF444F /* PBXTargetDependency */,
+			);
+			name = SitnuWatch;
+			productName = SitnuWatch;
+			productReference = FBF707572137353900DF444F /* SitnuWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBF707682137353A00DF444F /* SitnuWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBF7078A2137353B00DF444F /* Build configuration list for PBXNativeTarget "SitnuWatch WatchKit App" */;
+			buildPhases = (
+				C477404650E4E50EB6977260 /* [CP] Check Pods Manifest.lock */,
+				FBF707672137353A00DF444F /* Resources */,
+				FBF707892137353B00DF444F /* Embed App Extensions */,
+				FF9DC6B1BB0997AB531873CF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBF7077B2137353A00DF444F /* PBXTargetDependency */,
+			);
+			name = "SitnuWatch WatchKit App";
+			productName = "SitnuWatch WatchKit App";
+			productReference = FBF707692137353A00DF444F /* SitnuWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FBF707772137353A00DF444F /* SitnuWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBF707862137353B00DF444F /* Build configuration list for PBXNativeTarget "SitnuWatch WatchKit Extension" */;
+			buildPhases = (
+				C6F4841FC453F0C651A308A9 /* [CP] Check Pods Manifest.lock */,
+				FBF707742137353A00DF444F /* Sources */,
+				FBF707752137353A00DF444F /* Frameworks */,
+				FBF707762137353A00DF444F /* Resources */,
+				5DBD2852341BED63CCB6D364 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SitnuWatch WatchKit Extension";
+			productName = "SitnuWatch WatchKit Extension";
+			productReference = FBF707782137353A00DF444F /* SitnuWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBF7074F2137353900DF444F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Nils Bergmann";
+				TargetAttributes = {
+					FBF707562137353900DF444F = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					FBF707682137353A00DF444F = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					FBF707772137353A00DF444F = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = FBF707522137353900DF444F /* Build configuration list for PBXProject "SitnuWatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBF7074E2137353900DF444F;
+			productRefGroup = FBF707582137353900DF444F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBF707562137353900DF444F /* SitnuWatch */,
+				FBF707682137353A00DF444F /* SitnuWatch WatchKit App */,
+				FBF707772137353A00DF444F /* SitnuWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBF707552137353900DF444F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF707622137353A00DF444F /* Assets.xcassets in Resources */,
+				FBCD7F9821381E4A00226807 /* Form.json in Resources */,
+				FBF707602137353900DF444F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF707672137353A00DF444F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF707F421373CA700DF444F /* Activity4@2x.png in Resources */,
+				FBF7079F2137367E00DF444F /* Interface.storyboard in Resources */,
+				FBF707F721373CA700DF444F /* Activity22@2x.png in Resources */,
+				FBF707E821373CA700DF444F /* Activity1@2x.png in Resources */,
+				FBF707E421373CA700DF444F /* Activity11@2x.png in Resources */,
+				FBF707F821373CA700DF444F /* Activity28@2x.png in Resources */,
+				FBF707F121373CA700DF444F /* Activity30@2x.png in Resources */,
+				FBF707ED21373CA700DF444F /* Activity25@2x.png in Resources */,
+				FBF707F221373CA700DF444F /* Activity15@2x.png in Resources */,
+				FBF707FB21373CA700DF444F /* Activity10@2x.png in Resources */,
+				FBF707EE21373CA700DF444F /* Activity27@2x.png in Resources */,
+				FBF707E621373CA700DF444F /* Activity8@2x.png in Resources */,
+				FBF707EC21373CA700DF444F /* Activity2@2x.png in Resources */,
+				FBF707E921373CA700DF444F /* Activity16@2x.png in Resources */,
+				FBF707FA21373CA700DF444F /* Activity7@2x.png in Resources */,
+				FBF707E521373CA700DF444F /* Activity9@2x.png in Resources */,
+				FBF707FE21373CA700DF444F /* Activity6@2x.png in Resources */,
+				FBF707F021373CA700DF444F /* Activity3@2x.png in Resources */,
+				FBF707F321373CA700DF444F /* Activity29@2x.png in Resources */,
+				FBF707FD21373CA700DF444F /* Activity23@2x.png in Resources */,
+				FBF707FC21373CA700DF444F /* Activity14@2x.png in Resources */,
+				FBF707F521373CA700DF444F /* Activity18@2x.png in Resources */,
+				FBF707F621373CA700DF444F /* Activity5@2x.png in Resources */,
+				FBF707E221373CA700DF444F /* Activity19@2x.png in Resources */,
+				FBF707E721373CA700DF444F /* Activity13@2x.png in Resources */,
+				FBF707F921373CA700DF444F /* Activity24@2x.png in Resources */,
+				FBF707722137353A00DF444F /* Assets.xcassets in Resources */,
+				FBF707EB21373CA700DF444F /* Activity17@2x.png in Resources */,
+				FBF707EF21373CA700DF444F /* Activity26@2x.png in Resources */,
+				FBF707E321373CA700DF444F /* Activity20@2x.png in Resources */,
+				FBF707EA21373CA700DF444F /* Activity12@2x.png in Resources */,
+				FBF707E121373CA700DF444F /* Activity21@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF707762137353A00DF444F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF707822137353B00DF444F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DBD2852341BED63CCB6D364 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SitnuWatch WatchKit Extension/Pods-SitnuWatch WatchKit Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC-watchOS/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesSwift-watchOS/Promises.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Locksmith/Locksmith.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/WebUntis/WebUntis.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Locksmith.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebUntis.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SitnuWatch WatchKit Extension/Pods-SitnuWatch WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4C6E92A45345ED41D778160 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SitnuWatch/Pods-SitnuWatch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Form/Form.framework",
+				"${BUILT_PRODUCTS_DIR}/HYP8601/HYP8601.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPMathParser/HYPMathParser.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPNorwegianAccountNumber/HYPNorwegianAccountNumber.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPNorwegianSSN/HYPNorwegianSSN.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-ANDYSafeValue/NSDictionary_ANDYSafeValue.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-HYPNestedAttributes/NSDictionary_HYPNestedAttributes.framework",
+				"${BUILT_PRODUCTS_DIR}/NSJSONSerialization-ANDYJSONFile/NSJSONSerialization_ANDYJSONFile.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject-HYPTesting/NSObject_HYPTesting.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPContainsString/NSString_HYPContainsString.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPFormula/NSString_HYPFormula.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPRelationshipParser/NSString_HYPRelationshipParser.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPWordExtractor/NSString_HYPWordExtractor.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-ZENInflections/NSString_ZENInflections.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC-iOS/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesSwift-iOS/Promises.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/UIViewController-HYPKeyboardToolbar/UIViewController_HYPKeyboardToolbar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Form.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYP8601.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPMathParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPNorwegianAccountNumber.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPNorwegianSSN.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_ANDYSafeValue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_HYPNestedAttributes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSJSONSerialization_ANDYJSONFile.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_HYPTesting.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPContainsString.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPFormula.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPRelationshipParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPWordExtractor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_ZENInflections.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIViewController_HYPKeyboardToolbar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SitnuWatch/Pods-SitnuWatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C477404650E4E50EB6977260 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SitnuWatch WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6F4841FC453F0C651A308A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SitnuWatch WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C83BACF0E3B9A5F945F3E18C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SitnuWatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBF707532137353900DF444F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF7075D2137353900DF444F /* ViewController.swift in Sources */,
+				FBCFF18B213813F4001141E2 /* LoginController.swift in Sources */,
+				FBF7075B2137353900DF444F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF707742137353A00DF444F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBCFF1802137E99A001141E2 /* WebUntisManageUtility.swift in Sources */,
+				FBF707B1213736B300DF444F /* LessonRowController.swift in Sources */,
+				FBF707B2213736B300DF444F /* LessonDetaillnterfaceController.swift in Sources */,
+				FBF707C2213738D400DF444F /* Utility.swift in Sources */,
+				FBF707AC2137369A00DF444F /* ExtensionDelegate.swift in Sources */,
+				FBF707AA2137369A00DF444F /* InterfaceController.swift in Sources */,
+				FBF707AB2137369A00DF444F /* ComplicationController.swift in Sources */,
+				FBF707A82137369A00DF444F /* WebUntisAccount.swift in Sources */,
+				FBF707B3213736B300DF444F /* NothingTodayRowController.swift in Sources */,
+				FBF707A72137369A00DF444F /* TimetableController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBF7076C2137353A00DF444F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBF707682137353A00DF444F /* SitnuWatch WatchKit App */;
+			targetProxy = FBF7076B2137353A00DF444F /* PBXContainerItemProxy */;
+		};
+		FBF7077B2137353A00DF444F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBF707772137353A00DF444F /* SitnuWatch WatchKit Extension */;
+			targetProxy = FBF7077A2137353A00DF444F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBF7075E2137353900DF444F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBF7075F2137353900DF444F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBF707842137353B00DF444F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBF707852137353B00DF444F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBF707872137353B00DF444F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9911CF0B852D50EABEAB1A41 /* Pods-SitnuWatch WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TZXX8B8FA4;
+				INFOPLIST_FILE = "SitnuWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.noim.SitnuWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SitnuWatch WatchKit Extension/SitnuWatch WatchKit Extension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		FBF707882137353B00DF444F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FECE80CE46FCCD07A99C76D2 /* Pods-SitnuWatch WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TZXX8B8FA4;
+				INFOPLIST_FILE = "SitnuWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.noim.SitnuWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SitnuWatch WatchKit Extension/SitnuWatch WatchKit Extension-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		FBF7078B2137353B00DF444F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C04C1C04556910D75B402F6 /* Pods-SitnuWatch WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TZXX8B8FA4;
+				IBSC_MODULE = SitnuWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "SitnuWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = io.noim.SitnuWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		FBF7078C2137353B00DF444F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DFA810450D1C6173AE3E1DF /* Pods-SitnuWatch WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TZXX8B8FA4;
+				IBSC_MODULE = SitnuWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "SitnuWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = io.noim.SitnuWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		FBF7078F2137353B00DF444F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5568FAFFDD906FC855EB5C23 /* Pods-SitnuWatch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TZXX8B8FA4;
+				INFOPLIST_FILE = SitnuWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.noim.SitnuWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBF707902137353B00DF444F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA9D3EB4A12BA922001E5C72 /* Pods-SitnuWatch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TZXX8B8FA4;
+				INFOPLIST_FILE = SitnuWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.noim.SitnuWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBF707522137353900DF444F /* Build configuration list for PBXProject "SitnuWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF707842137353B00DF444F /* Debug */,
+				FBF707852137353B00DF444F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBF707862137353B00DF444F /* Build configuration list for PBXNativeTarget "SitnuWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF707872137353B00DF444F /* Debug */,
+				FBF707882137353B00DF444F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBF7078A2137353B00DF444F /* Build configuration list for PBXNativeTarget "SitnuWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF7078B2137353B00DF444F /* Debug */,
+				FBF7078C2137353B00DF444F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBF7078E2137353B00DF444F /* Build configuration list for PBXNativeTarget "SitnuWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF7078F2137353B00DF444F /* Debug */,
+				FBF707902137353B00DF444F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBF7074F2137353900DF444F /* Project object */;
+}
