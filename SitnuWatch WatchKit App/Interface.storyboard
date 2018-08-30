@@ -12,7 +12,7 @@
         <!--Welcome-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="Welcome" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SitnuWatch_WatchKit_App" customModuleProvider="target">
+                <controller identifier="Welcome" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SitnuWatch_WatchKit_Extension">
                     <items>
                         <label alignment="center" hidden="YES" text="Welcome" textAlignment="center" baselineAdjustment="alignCenters" id="S6U-99-UC6">
                             <color key="textColor" red="1" green="0.89238226620000005" blue="0.087427422559999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
