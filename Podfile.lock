@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (4.7.3)
+  - Alamofire (4.8.0)
   - CryptoSwift (0.11.0)
   - ESPullToRefresh (2.7)
   - Form (3.15.0):
@@ -33,9 +33,9 @@ PODS:
   - NSString-HYPRelationshipParser (0.4.1)
   - NSString-HYPWordExtractor (1.2)
   - NSString-ZENInflections (1.2)
-  - PromisesObjC (1.2.3)
-  - PromisesSwift (1.2.3):
-    - PromisesObjC (= 1.2.3)
+  - PromisesObjC (1.2.4)
+  - PromisesSwift (1.2.4):
+    - PromisesObjC (= 1.2.4)
   - Realm (3.7.6):
     - Realm/Headers (= 3.7.6)
   - Realm/Headers (3.7.6)
@@ -90,11 +90,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   WebUntis:
-    :commit: 7c4e3d750792da0a15515b1c8010dcb67182c79b
+    :commit: 9720d0f374cb2bdaed1b9b570eca6e135d965608
     :git: https://github.com/TheNoim/WebUntis-Swift.git
 
 SPEC CHECKSUMS:
-  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   CryptoSwift: ad5208dd2aae0a764ea4ce2c2d34bd067cae67f0
   ESPullToRefresh: 119e2710b82b75536aab2bbe4883ba119fca35c8
   Form: c8c0a0ee4d4b9f0966726ec072c03c5bb2abfb1a
@@ -112,8 +112,8 @@ SPEC CHECKSUMS:
   NSString-HYPRelationshipParser: 7fa231131e408f26b3b72a41157aa6620a195b4d
   NSString-HYPWordExtractor: 7484da8d2d23e41b24b0bdb218293ab349f9f650
   NSString-ZENInflections: 35ae6d02981b1def07bd6dc8e6455e827453bc29
-  PromisesObjC: a3a4263d8a9260214267e0b3788d0f83466ad449
-  PromisesSwift: f7f45c21986419e85f7c5b645ed8c6a2c10c04b4
+  PromisesObjC: 4a3f2e30a0eb793e9bbb32cd367b625d4a14de5a
+  PromisesSwift: 8e1d2cdbc3cafb4f09d4b82df12f645bc19ab64e
   Realm: 9eaecad54712d6246d08ba34c10f354e4715d7d3
   RealmSwift: 1fe08b4ebaeeaacf17f9ba0343f7b25c9fc31fa6
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6

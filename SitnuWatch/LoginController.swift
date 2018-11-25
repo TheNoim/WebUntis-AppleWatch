@@ -32,9 +32,10 @@ class LoginController: FORMViewController {
                 if self.dataSource.isValid == false {
                     self.dataSource.validate()
                 } else {
-                    guard let server = self.dataSource.values["server-url"] as? String, let password = self.dataSource.values["password"] as? String, let username = self.dataSource.values["username"] as? String, let school = self.dataSource.values["school"] as? String else {
+                    guard let server = self.dataSource.values["server-url"] as? String, let username = self.dataSource.values["username"] as? String, let school = self.dataSource.values["school"] as? String else {
                         return;
                     }
+                    let password = self.dataSource.values["password"] as? String ?? "";
                     let appDelegate = UIApplication.shared.delegate as! AppDelegate;
                     SVProgressHUD.show();
                     appDelegate.login(server: server, school: school, username: username, password: password).then { (success, error) in
