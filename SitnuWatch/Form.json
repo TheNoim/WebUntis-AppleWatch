@@ -43,7 +43,7 @@
                                        "title": "Password",
                                        "type": "password",
                                        "validations":{
-                                       "required": true
+                                       "required": false
                                        }
                                        }
                                        ]
