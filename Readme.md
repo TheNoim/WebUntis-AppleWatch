@@ -4,6 +4,8 @@ This Client is based on my own [WebUntis Swift Framework](https://github.com/The
 
 I will probably not publish this app on the app store, but if you want to use it, you can compile it your self and use it. 
 
+![App Demo](resources/AppDemo.png) ![Complication Demo](resources/ComplicationDemo.png)
+
 ## Features
 
 - Complication Support with Lesson Countdown
