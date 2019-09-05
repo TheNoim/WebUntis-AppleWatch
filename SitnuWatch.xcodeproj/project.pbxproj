@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B01D7E9E7AEB869D3801627 /* Pods_SitnuWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A81BF751F26275178B7A42 /* Pods_SitnuWatch.framework */; };
-		610601D8FF92A306CB71E031 /* Pods_SitnuWatch_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55523CA94B0D4AA9A7AFCC00 /* Pods_SitnuWatch_WatchKit_App.framework */; };
-		933934CF2BBFB8A416D5A54C /* Pods_SitnuWatch_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C2B37F84B07AD29219DC46 /* Pods_SitnuWatch_WatchKit_Extension.framework */; };
+		59B5244E5083466461C9CB6A /* Pods_SitnuWatch_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7536660C02BB9F67A6F360 /* Pods_SitnuWatch_WatchKit_App.framework */; };
+		C3C139726E672094309684BC /* Pods_SitnuWatch_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF8983F16FFE2DB14573236 /* Pods_SitnuWatch_WatchKit_Extension.framework */; };
+		E36E417C3634F76F13D2A7BF /* Pods_SitnuWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B7BA2287E6222E837D41EA9 /* Pods_SitnuWatch.framework */; };
 		FBCD7F9821381E4A00226807 /* Form.json in Resources */ = {isa = PBXBuildFile; fileRef = FBCD7F9721381E4A00226807 /* Form.json */; };
 		FBCFF1802137E99A001141E2 /* WebUntisManageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCFF17F2137E99A001141E2 /* WebUntisManageUtility.swift */; };
 		FBCFF1852137F68E001141E2 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCFF1842137F68E001141E2 /* SVProgressHUD.framework */; };
@@ -110,14 +110,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0DFA810450D1C6173AE3E1DF /* Pods-SitnuWatch WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SitnuWatch WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-SitnuWatch WatchKit App/Pods-SitnuWatch WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
-		55523CA94B0D4AA9A7AFCC00 /* Pods_SitnuWatch_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SitnuWatch_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5568FAFFDD906FC855EB5C23 /* Pods-SitnuWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SitnuWatch.debug.xcconfig"; path = "Target Support Files/Pods-SitnuWatch/Pods-SitnuWatch.debug.xcconfig"; sourceTree = "<group>"; };
-		82C2B37F84B07AD29219DC46 /* Pods_SitnuWatch_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SitnuWatch_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C04C1C04556910D75B402F6 /* Pods-SitnuWatch WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SitnuWatch WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-SitnuWatch WatchKit App/Pods-SitnuWatch WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
-		9911CF0B852D50EABEAB1A41 /* Pods-SitnuWatch WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SitnuWatch WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-SitnuWatch WatchKit Extension/Pods-SitnuWatch WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		BA9D3EB4A12BA922001E5C72 /* Pods-SitnuWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SitnuWatch.release.xcconfig"; path = "Target Support Files/Pods-SitnuWatch/Pods-SitnuWatch.release.xcconfig"; sourceTree = "<group>"; };
-		F0A81BF751F26275178B7A42 /* Pods_SitnuWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SitnuWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0202E98B6A6E96EB8AE47657 /* Pods-SitnuWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SitnuWatch.debug.xcconfig"; path = "Target Support Files/Pods-SitnuWatch/Pods-SitnuWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		0BF77865A68AE8451659A15E /* Pods-SitnuWatch WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SitnuWatch WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-SitnuWatch WatchKit App/Pods-SitnuWatch WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		784670E99B083B50F82CD746 /* Pods-SitnuWatch WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SitnuWatch WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-SitnuWatch WatchKit App/Pods-SitnuWatch WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		7B7BA2287E6222E837D41EA9 /* Pods_SitnuWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SitnuWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B7536660C02BB9F67A6F360 /* Pods_SitnuWatch_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SitnuWatch_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B545408D7FD6226D24D867E1 /* Pods-SitnuWatch WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SitnuWatch WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-SitnuWatch WatchKit Extension/Pods-SitnuWatch WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		D6A65DA448C66F0AA70FF26B /* Pods-SitnuWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SitnuWatch.release.xcconfig"; path = "Target Support Files/Pods-SitnuWatch/Pods-SitnuWatch.release.xcconfig"; sourceTree = "<group>"; };
+		D9D4AA24415B5DCBD87F70F1 /* Pods-SitnuWatch WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SitnuWatch WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-SitnuWatch WatchKit Extension/Pods-SitnuWatch WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		DCF8983F16FFE2DB14573236 /* Pods_SitnuWatch_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SitnuWatch_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBCD7F9721381E4A00226807 /* Form.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Form.json; sourceTree = "<group>"; };
 		FBCFF17F2137E99A001141E2 /* WebUntisManageUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebUntisManageUtility.swift; sourceTree = "<group>"; };
 		FBCFF1842137F68E001141E2 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,7 +179,6 @@
 		FBF707DE21373CA600DF444F /* Activity14@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity14@2x.png"; sourceTree = "<group>"; };
 		FBF707DF21373CA600DF444F /* Activity23@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity23@2x.png"; sourceTree = "<group>"; };
 		FBF707E021373CA600DF444F /* Activity6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity6@2x.png"; sourceTree = "<group>"; };
-		FECE80CE46FCCD07A99C76D2 /* Pods-SitnuWatch WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SitnuWatch WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-SitnuWatch WatchKit Extension/Pods-SitnuWatch WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +190,7 @@
 				FBCFF18921380167001141E2 /* ESPullToRefresh.framework in Frameworks */,
 				FBCFF1872137F85E001141E2 /* Promises.framework in Frameworks */,
 				FBCFF1852137F68E001141E2 /* SVProgressHUD.framework in Frameworks */,
-				4B01D7E9E7AEB869D3801627 /* Pods_SitnuWatch.framework in Frameworks */,
+				E36E417C3634F76F13D2A7BF /* Pods_SitnuWatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +198,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				933934CF2BBFB8A416D5A54C /* Pods_SitnuWatch_WatchKit_Extension.framework in Frameworks */,
+				C3C139726E672094309684BC /* Pods_SitnuWatch_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +206,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				610601D8FF92A306CB71E031 /* Pods_SitnuWatch_WatchKit_App.framework in Frameworks */,
+				59B5244E5083466461C9CB6A /* Pods_SitnuWatch_WatchKit_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,12 +216,12 @@
 		489D1F3CE74A448F04CE699A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5568FAFFDD906FC855EB5C23 /* Pods-SitnuWatch.debug.xcconfig */,
-				BA9D3EB4A12BA922001E5C72 /* Pods-SitnuWatch.release.xcconfig */,
-				8C04C1C04556910D75B402F6 /* Pods-SitnuWatch WatchKit App.debug.xcconfig */,
-				0DFA810450D1C6173AE3E1DF /* Pods-SitnuWatch WatchKit App.release.xcconfig */,
-				9911CF0B852D50EABEAB1A41 /* Pods-SitnuWatch WatchKit Extension.debug.xcconfig */,
-				FECE80CE46FCCD07A99C76D2 /* Pods-SitnuWatch WatchKit Extension.release.xcconfig */,
+				0202E98B6A6E96EB8AE47657 /* Pods-SitnuWatch.debug.xcconfig */,
+				D6A65DA448C66F0AA70FF26B /* Pods-SitnuWatch.release.xcconfig */,
+				0BF77865A68AE8451659A15E /* Pods-SitnuWatch WatchKit App.debug.xcconfig */,
+				784670E99B083B50F82CD746 /* Pods-SitnuWatch WatchKit App.release.xcconfig */,
+				D9D4AA24415B5DCBD87F70F1 /* Pods-SitnuWatch WatchKit Extension.debug.xcconfig */,
+				B545408D7FD6226D24D867E1 /* Pods-SitnuWatch WatchKit Extension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -233,9 +233,9 @@
 				FBCFF18821380167001141E2 /* ESPullToRefresh.framework */,
 				FBCFF1862137F85E001141E2 /* Promises.framework */,
 				FBCFF1842137F68E001141E2 /* SVProgressHUD.framework */,
-				F0A81BF751F26275178B7A42 /* Pods_SitnuWatch.framework */,
-				55523CA94B0D4AA9A7AFCC00 /* Pods_SitnuWatch_WatchKit_App.framework */,
-				82C2B37F84B07AD29219DC46 /* Pods_SitnuWatch_WatchKit_Extension.framework */,
+				7B7BA2287E6222E837D41EA9 /* Pods_SitnuWatch.framework */,
+				8B7536660C02BB9F67A6F360 /* Pods_SitnuWatch_WatchKit_App.framework */,
+				DCF8983F16FFE2DB14573236 /* Pods_SitnuWatch_WatchKit_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -359,12 +359,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBF7078E2137353B00DF444F /* Build configuration list for PBXNativeTarget "SitnuWatch" */;
 			buildPhases = (
-				C83BACF0E3B9A5F945F3E18C /* [CP] Check Pods Manifest.lock */,
+				EB151F0F1D218A0C566A2A9B /* [CP] Check Pods Manifest.lock */,
 				FBF707532137353900DF444F /* Sources */,
 				FBF707542137353900DF444F /* Frameworks */,
 				FBF707552137353900DF444F /* Resources */,
 				FBF7078D2137353B00DF444F /* Embed Watch Content */,
-				A4C6E92A45345ED41D778160 /* [CP] Embed Pods Frameworks */,
+				27CD215D4DFE0AEFE8089F46 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -380,7 +380,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBF7078A2137353B00DF444F /* Build configuration list for PBXNativeTarget "SitnuWatch WatchKit App" */;
 			buildPhases = (
-				C477404650E4E50EB6977260 /* [CP] Check Pods Manifest.lock */,
+				22D68F85B185D0B38855AE10 /* [CP] Check Pods Manifest.lock */,
 				FBF707672137353A00DF444F /* Resources */,
 				FBF707892137353B00DF444F /* Embed App Extensions */,
 				FF9DC6B1BB0997AB531873CF /* Frameworks */,
@@ -399,11 +399,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBF707862137353B00DF444F /* Build configuration list for PBXNativeTarget "SitnuWatch WatchKit Extension" */;
 			buildPhases = (
-				C6F4841FC453F0C651A308A9 /* [CP] Check Pods Manifest.lock */,
+				2C65255447DEA4E7F9A9803C /* [CP] Check Pods Manifest.lock */,
 				FBF707742137353A00DF444F /* Sources */,
 				FBF707752137353A00DF444F /* Frameworks */,
 				FBF707762137353A00DF444F /* Resources */,
-				5DBD2852341BED63CCB6D364 /* [CP] Embed Pods Frameworks */,
+				FAEFB575990C414CCDD978E3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -522,102 +522,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5DBD2852341BED63CCB6D364 /* [CP] Embed Pods Frameworks */ = {
+		22D68F85B185D0B38855AE10 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SitnuWatch WatchKit Extension/Pods-SitnuWatch WatchKit Extension-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/PromisesObjC-watchOS/FBLPromises.framework",
-				"${BUILT_PRODUCTS_DIR}/PromisesSwift-watchOS/Promises.framework",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Locksmith/Locksmith.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/WebUntis/WebUntis.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promises.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Locksmith.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebUntis.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SitnuWatch WatchKit Extension/Pods-SitnuWatch WatchKit Extension-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A4C6E92A45345ED41D778160 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SitnuWatch/Pods-SitnuWatch-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
-				"${BUILT_PRODUCTS_DIR}/Form/Form.framework",
-				"${BUILT_PRODUCTS_DIR}/HYP8601/HYP8601.framework",
-				"${BUILT_PRODUCTS_DIR}/HYPMathParser/HYPMathParser.framework",
-				"${BUILT_PRODUCTS_DIR}/HYPNorwegianAccountNumber/HYPNorwegianAccountNumber.framework",
-				"${BUILT_PRODUCTS_DIR}/HYPNorwegianSSN/HYPNorwegianSSN.framework",
-				"${BUILT_PRODUCTS_DIR}/NSDictionary-ANDYSafeValue/NSDictionary_ANDYSafeValue.framework",
-				"${BUILT_PRODUCTS_DIR}/NSDictionary-HYPNestedAttributes/NSDictionary_HYPNestedAttributes.framework",
-				"${BUILT_PRODUCTS_DIR}/NSJSONSerialization-ANDYJSONFile/NSJSONSerialization_ANDYJSONFile.framework",
-				"${BUILT_PRODUCTS_DIR}/NSObject-HYPTesting/NSObject_HYPTesting.framework",
-				"${BUILT_PRODUCTS_DIR}/NSString-HYPContainsString/NSString_HYPContainsString.framework",
-				"${BUILT_PRODUCTS_DIR}/NSString-HYPFormula/NSString_HYPFormula.framework",
-				"${BUILT_PRODUCTS_DIR}/NSString-HYPRelationshipParser/NSString_HYPRelationshipParser.framework",
-				"${BUILT_PRODUCTS_DIR}/NSString-HYPWordExtractor/NSString_HYPWordExtractor.framework",
-				"${BUILT_PRODUCTS_DIR}/NSString-ZENInflections/NSString_ZENInflections.framework",
-				"${BUILT_PRODUCTS_DIR}/PromisesObjC-iOS/FBLPromises.framework",
-				"${BUILT_PRODUCTS_DIR}/PromisesSwift-iOS/Promises.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/UIViewController-HYPKeyboardToolbar/UIViewController_HYPKeyboardToolbar.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Form.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYP8601.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPMathParser.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPNorwegianAccountNumber.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPNorwegianSSN.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_ANDYSafeValue.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_HYPNestedAttributes.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSJSONSerialization_ANDYJSONFile.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_HYPTesting.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPContainsString.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPFormula.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPRelationshipParser.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPWordExtractor.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_ZENInflections.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promises.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIViewController_HYPKeyboardToolbar.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SitnuWatch/Pods-SitnuWatch-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C477404650E4E50EB6977260 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SitnuWatch WatchKit App-checkManifestLockResult.txt",
 			);
@@ -626,16 +544,37 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C6F4841FC453F0C651A308A9 /* [CP] Check Pods Manifest.lock */ = {
+		27CD215D4DFE0AEFE8089F46 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SitnuWatch/Pods-SitnuWatch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SitnuWatch/Pods-SitnuWatch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SitnuWatch/Pods-SitnuWatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C65255447DEA4E7F9A9803C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SitnuWatch WatchKit Extension-checkManifestLockResult.txt",
 			);
@@ -644,22 +583,43 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C83BACF0E3B9A5F945F3E18C /* [CP] Check Pods Manifest.lock */ = {
+		EB151F0F1D218A0C566A2A9B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SitnuWatch-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAEFB575990C414CCDD978E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SitnuWatch WatchKit Extension/Pods-SitnuWatch WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SitnuWatch WatchKit Extension/Pods-SitnuWatch WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SitnuWatch WatchKit Extension/Pods-SitnuWatch WatchKit Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -835,12 +795,12 @@
 		};
 		FBF707872137353B00DF444F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9911CF0B852D50EABEAB1A41 /* Pods-SitnuWatch WatchKit Extension.debug.xcconfig */;
+			baseConfigurationReference = D9D4AA24415B5DCBD87F70F1 /* Pods-SitnuWatch WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TZXX8B8FA4;
+				DEVELOPMENT_TEAM = P88CDRP8CR;
 				INFOPLIST_FILE = "SitnuWatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -853,20 +813,20 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "SitnuWatch WatchKit Extension/SitnuWatch WatchKit Extension-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Debug;
 		};
 		FBF707882137353B00DF444F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FECE80CE46FCCD07A99C76D2 /* Pods-SitnuWatch WatchKit Extension.release.xcconfig */;
+			baseConfigurationReference = B545408D7FD6226D24D867E1 /* Pods-SitnuWatch WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TZXX8B8FA4;
+				DEVELOPMENT_TEAM = P88CDRP8CR;
 				INFOPLIST_FILE = "SitnuWatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -878,90 +838,94 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "SitnuWatch WatchKit Extension/SitnuWatch WatchKit Extension-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Release;
 		};
 		FBF7078B2137353B00DF444F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C04C1C04556910D75B402F6 /* Pods-SitnuWatch WatchKit App.debug.xcconfig */;
+			baseConfigurationReference = 0BF77865A68AE8451659A15E /* Pods-SitnuWatch WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TZXX8B8FA4;
+				DEVELOPMENT_TEAM = P88CDRP8CR;
 				IBSC_MODULE = SitnuWatch_WatchKit_Extension;
 				INFOPLIST_FILE = "SitnuWatch WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = io.noim.SitnuWatch.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Debug;
 		};
 		FBF7078C2137353B00DF444F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DFA810450D1C6173AE3E1DF /* Pods-SitnuWatch WatchKit App.release.xcconfig */;
+			baseConfigurationReference = 784670E99B083B50F82CD746 /* Pods-SitnuWatch WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TZXX8B8FA4;
+				DEVELOPMENT_TEAM = P88CDRP8CR;
 				IBSC_MODULE = SitnuWatch_WatchKit_Extension;
 				INFOPLIST_FILE = "SitnuWatch WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = io.noim.SitnuWatch.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Release;
 		};
 		FBF7078F2137353B00DF444F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5568FAFFDD906FC855EB5C23 /* Pods-SitnuWatch.debug.xcconfig */;
+			baseConfigurationReference = 0202E98B6A6E96EB8AE47657 /* Pods-SitnuWatch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TZXX8B8FA4;
+				DEVELOPMENT_TEAM = P88CDRP8CR;
 				INFOPLIST_FILE = SitnuWatch/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.noim.SitnuWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		FBF707902137353B00DF444F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA9D3EB4A12BA922001E5C72 /* Pods-SitnuWatch.release.xcconfig */;
+			baseConfigurationReference = D6A65DA448C66F0AA70FF26B /* Pods-SitnuWatch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TZXX8B8FA4;
+				DEVELOPMENT_TEAM = P88CDRP8CR;
 				INFOPLIST_FILE = SitnuWatch/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.noim.SitnuWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

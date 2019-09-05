@@ -93,54 +93,56 @@ class TimetableController: WKInterfaceController {
     }
     
     func updateUI(lessons: [Lesson]) {
-        if lessons.count == 0 {
-            self.timetable.setRowTypes(["NothingTodayRowController"]);
-        } else {
-            var allLessons: [Lesson] = lessons.filter({ lesson in
-                return lesson.type == LessonType.Lesson
-            }).getVisibleLessons().sorted(by: { $0.start < $1.start });
-            var rowControllerTypeArray: [String] = [];
-            for _ in 0..<allLessons.count {
-                rowControllerTypeArray.append("LessonRowController");
-            }
-            self.timetable.setRowTypes(rowControllerTypeArray);
-            for lessonA in allLessons.enumerated() {
-                var lesson = lessonA.element;
-                var controller = self.timetable.rowController(at: lessonA.offset) as! LessonRowController;
-                var Color = "ffffff"
-                var subjectLabel: String {
-                    var string = "";
-                    if lesson.startGrid.timeHash != lesson.endGrid.timeHash {
-                        string = "\(lesson.startGrid.custom ? "C" : lesson.startGrid.name)-\(lesson.endGrid.custom ? "C" : lesson.endGrid.name) ";
-                    } else {
-                        string = "\(lesson.startGrid.custom ? "C" : lesson.startGrid.name) ";
-                    }
-                    if lesson.subjects.count == 0 {
-                        return string + "Unknown"
-                    } else {
-                        for subject in lesson.subjects.enumerated() {
-                            if subject.offset == 0 {
-                                Color = subject.element.backgroundColor;
-                                string = string + subject.element.longname;
-                            } else {
-                                string = string + ", " + subject.element.longname;
-                            }
+        DispatchQueue.main.async {
+            if lessons.count == 0 {
+                self.timetable.setRowTypes(["NothingTodayRowController"]);
+            } else {
+                var allLessons: [Lesson] = lessons.filter({ lesson in
+                    return lesson.type == LessonType.Lesson
+                }).getVisibleLessons().sorted(by: { $0.start < $1.start });
+                var rowControllerTypeArray: [String] = [];
+                for _ in 0..<allLessons.count {
+                    rowControllerTypeArray.append("LessonRowController");
+                }
+                self.timetable.setRowTypes(rowControllerTypeArray);
+                for lessonA in allLessons.enumerated() {
+                    var lesson = lessonA.element;
+                    var controller = self.timetable.rowController(at: lessonA.offset) as! LessonRowController;
+                    var Color = "ffffff"
+                    var subjectLabel: String {
+                        var string = "";
+                        if lesson.startGrid.timeHash != lesson.endGrid.timeHash {
+                            string = "\(lesson.startGrid.custom ? "C" : lesson.startGrid.name)-\(lesson.endGrid.custom ? "C" : lesson.endGrid.name) ";
+                        } else {
+                            string = "\(lesson.startGrid.custom ? "C" : lesson.startGrid.name) ";
                         }
-                        return string;
+                        if lesson.subjects.count == 0 {
+                            return string + "Unknown"
+                        } else {
+                            for subject in lesson.subjects.enumerated() {
+                                if subject.offset == 0 {
+                                    Color = subject.element.backgroundColor;
+                                    string = string + subject.element.longname;
+                                } else {
+                                    string = string + ", " + subject.element.longname;
+                                }
+                            }
+                            return string;
+                        }
                     }
+                    if lesson.code == Code.Cancelled {
+                        controller.subjectLabel.setAttributedText(NSAttributedString(string: subjectLabel, attributes: [NSAttributedString.Key.strikethroughStyle: 1]));
+                        controller.timeRangeStart.setAttributedText(NSAttributedString(string: self.getTimeFormatted(date: lesson.start), attributes: [NSAttributedString.Key.strikethroughStyle: 1]))
+                        controller.timeRangeEnd.setAttributedText(NSAttributedString(string: self.getTimeFormatted(date: lesson.end), attributes: [NSAttributedString.Key.strikethroughStyle: 1]))
+                    } else {
+                        controller.subjectLabel.setText(subjectLabel);
+                        controller.timeRangeStart.setText(self.getTimeFormatted(date: lesson.start));
+                        controller.timeRangeEnd.setText(self.getTimeFormatted(date: lesson.end));
+                    }
+                    controller.subjectLabel.setTextColor(UIColor(hexString: Color))
+                    controller.timer.setHidden(true);
+                    controller.lesson = lesson;
                 }
-                if lesson.code == Code.Cancelled {
-                    controller.subjectLabel.setAttributedText(NSAttributedString(string: subjectLabel, attributes: [NSAttributedStringKey.strikethroughStyle: 1]));
-                    controller.timeRangeStart.setAttributedText(NSAttributedString(string: self.getTimeFormatted(date: lesson.start), attributes: [NSAttributedStringKey.strikethroughStyle: 1]))
-                    controller.timeRangeEnd.setAttributedText(NSAttributedString(string: self.getTimeFormatted(date: lesson.end), attributes: [NSAttributedStringKey.strikethroughStyle: 1]))
-                } else {
-                    controller.subjectLabel.setText(subjectLabel);
-                    controller.timeRangeStart.setText(self.getTimeFormatted(date: lesson.start));
-                    controller.timeRangeEnd.setText(self.getTimeFormatted(date: lesson.end));
-                }
-                controller.subjectLabel.setTextColor(UIColor(hexString: Color))
-                controller.timer.setHidden(true);
-                controller.lesson = lesson;
             }
         }
     }

@@ -22,6 +22,8 @@ class ExtensionDelegate: NSObject, WCSessionDelegate, WKExtensionDelegate {
     
     var session: WCSession = WCSession.default;
     
+    var firstLaunch: Bool = true;
+    
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
         if WCSession.isSupported() {
@@ -31,6 +33,7 @@ class ExtensionDelegate: NSObject, WCSessionDelegate, WKExtensionDelegate {
             self.session = session;
         }
         self.doLogin();
+        self.firstLaunch = false;
     }
     
     override init() {
@@ -39,6 +42,10 @@ class ExtensionDelegate: NSObject, WCSessionDelegate, WKExtensionDelegate {
 
     func applicationDidBecomeActive() {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        if !self.firstLaunch {
+            print("Rerun login. applicationDidBecomeActive()");
+            self.doLogin();
+        }
     }
 
     func applicationWillResignActive() {
@@ -86,8 +93,10 @@ class ExtensionDelegate: NSObject, WCSessionDelegate, WKExtensionDelegate {
     func doLogin(completion: @escaping (Error?) -> Void = { _ in } ) {
         let (success, account) = WebUntisAccountMangement.getWebUntisAccountConfiguration();
         if success, account != nil {
+            print("Reload root")
             WKInterfaceController.reloadRootPageControllers(withNames: ["Welcome"], contexts: [["do": "loading"]], orientation: .horizontal, pageIndex: 0);
             WebUntisAccountMangement.configureWebUntis(account: account!).then { _ in
+                print("Reload root 2")
                 WKInterfaceController.reloadRootPageControllers(withNames: ["Timetable"], contexts: [["date": self.defaultDate]], orientation: .horizontal, pageIndex: 0);
                 completion(nil);
             }.catch { error in
@@ -121,7 +130,7 @@ class ExtensionDelegate: NSObject, WCSessionDelegate, WKExtensionDelegate {
             });
             break;
         case "currentUser":
-            var (success, account) = WebUntisAccountMangement.getWebUntisAccountConfiguration();
+            let (success, account) = WebUntisAccountMangement.getWebUntisAccountConfiguration();
             if success, account != nil {
                 replyHandler(["account": account!.dic]);
             } else {

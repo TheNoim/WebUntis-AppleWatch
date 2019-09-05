@@ -26,7 +26,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Timeline Configuration
     
     func getSupportedTimeTravelDirections(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimeTravelDirections) -> Void) {
-        handler([.forward, .backward])
+        handler([])
     }
     
     func getTimelineStartDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void) {
@@ -65,47 +65,72 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         });
     }
     
-    func getTimelineEntries(for complication: CLKComplication, before date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
-        let start = Calendar.current.date(byAdding: .minute, value: -1, to: Calendar.current.date(byAdding: .day, value: -2, to: date)!);
-        let end = date;
-        self.getEntries(complication: complication, start: start!, end: end, withHandler: handler);
-    }
-    
     func getEntries(complication: CLKComplication, start: Date, end: Date, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
-        switch complication.family {
-        case .modularLarge:
-            self.getWebUntisInstanceAndConfigure().then { webuntis in
-                webuntis.getTimetable(between: start, and: end, forceRefresh: false, startBackgroundRefresh: false).then { result in
-                    let sorted = result.getVisibleLessons().filter({ lesson in
-                        return lesson.code != Code.Cancelled;
-                    }).sorted(by: { $0.start < $1.start });
-                    var entries: [CLKComplicationTimelineEntry] = [];
-                    for (index, lesson) in sorted.enumerated() {
-                        if index == sorted.startIndex, start < lesson.start {
-                            entries.append(CLKComplicationTimelineEntry(date: start, complicationTemplate: self.getBreakTemplateFor(for: index - 1, inList: sorted)));
+        print("getEntries(start: \(start) end: \(end)");
+        self.getWebUntisInstanceAndConfigure().then { webuntis in
+            webuntis.getTimetable(between: start, and: end, forceRefresh: false, startBackgroundRefresh: false).then { result in
+                let sorted = result.getVisibleLessons().filter({ lesson in
+                    return lesson.code != Code.Cancelled;
+                }).sorted(by: { $0.start < $1.start });
+                var entries: [CLKComplicationTimelineEntry] = [];
+                var lastLessonEndDate: Date?;
+                var lastLesson: Lesson?;
+                if let breakTemplate = self.getBreakTemplateFor(for: 0, inList: sorted, for: complication.family) {
+                    entries.append(CLKComplicationTimelineEntry(date: start, complicationTemplate: breakTemplate));
+                }
+                for (index, lesson) in sorted.enumerated() {
+                    if let template = self.createTemplateFor(lesson: lesson, start: lesson.start, end: lesson.end, for: complication.family) {
+                        let entry = CLKComplicationTimelineEntry(date: lesson.start, complicationTemplate: template);
+                        entries.append(entry);
+                        if index != (sorted.count - 1) {
+                            if let breakTemplate = self.getBreakTemplateFor(for: index, inList: sorted, for: complication.family) {
+                                entries.append(CLKComplicationTimelineEntry(date: lesson.end, complicationTemplate: breakTemplate));
+                            }
                         }
-                        if index != (sorted.endIndex - 1) {
-                            let template = self.createTemplateFor(lesson: lesson, start: lesson.start, end: lesson.end);
-                            let entry = CLKComplicationTimelineEntry(date: lesson.start, complicationTemplate: template);
-                            entries.append(entry);
-                            entries.append(CLKComplicationTimelineEntry(date: lesson.end, complicationTemplate: self.getBreakTemplateFor(for: index, inList: sorted)));
-                        } else {
-                            let template = self.createTemplateFor(lesson: lesson, start: lesson.start, end: end);
-                            let entry = CLKComplicationTimelineEntry(date: lesson.start, complicationTemplate: template);
-                            entries.append(entry);
-                        }
+                        lastLessonEndDate = lesson.end;
+                        lastLesson = lesson;
                     }
+                    
+                }
+                if lastLessonEndDate != nil && lastLesson != nil {
+                    let template = CLKComplicationTemplateModularLargeStandardBody();
+                    template.headerTextProvider = CLKSimpleTextProvider(text: "End of Timeline");
+                    template.body1TextProvider = CLKSimpleTextProvider(text: "Last: " + self.infoString(lesson: lastLesson!));
+                    
+                    // Try to get next possible lesson first
+                    self.getTimelineEndDate(for: complication, withHandler: { timelineEnd in
+                        if timelineEnd != nil {
+                            let lessons: [Lesson] = webuntis.getTimetableFromDatabase(between: lastLessonEndDate!, and: timelineEnd!).sorted(by: { $0.start < $1.start });
+                            if lessons.count >= 1 {
+                                if let breakTemplate = self.getBreakTemplateFor(for: -1, inList: lessons, for: complication.family) {
+                                    // Now we have the next template
+                                    entries.append(CLKComplicationTimelineEntry(date: lastLessonEndDate!, complicationTemplate: breakTemplate));
+                                    handler(entries);
+                                } else {
+                                    // Something went wrong
+                                    entries.append(CLKComplicationTimelineEntry(date: lastLessonEndDate!, complicationTemplate: template));
+                                    handler(entries);
+                                }
+                            } else {
+                                // No more lessons
+                                entries.append(CLKComplicationTimelineEntry(date: lastLessonEndDate!, complicationTemplate: template));
+                                handler(entries);
+                            }
+                        } else {
+                            // No date?
+                            entries.append(CLKComplicationTimelineEntry(date: lastLessonEndDate!, complicationTemplate: template));
+                            handler(entries);
+                        }
+                    });
+                } else {
                     handler(entries);
-                    }.catch { error in
-                        print(error);
-                        handler(nil)
-                };
-                }.catch { error in
-                    print(error);
-                    handler(nil)
-            }
-            break;
-        default:
+                }
+            }.catch { error in
+                print(error);
+                handler(nil)
+            };
+        }.catch { error in
+            print(error);
             handler(nil)
         }
     }
@@ -117,42 +142,52 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         self.getEntries(complication: complication, start: start, end: end!, withHandler: handler);
     }
     
-    func createTemplateFor(lesson: Lesson, start: Date, end: Date) -> CLKComplicationTemplateModularLargeStandardBody {
-        let template = CLKComplicationTemplateModularLargeStandardBody();
-        var subjects = "";
-        if lesson.startGrid.timeHash != lesson.endGrid.timeHash, !lesson.startGrid.custom, !lesson.endGrid.custom {
-            subjects += "\(lesson.startGrid.name)-\(lesson.endGrid.name) ";
-        } else {
-            if !lesson.startGrid.custom {
-                subjects += "\(lesson.startGrid.name) ";
+    func createTemplateFor(lesson: Lesson, start: Date, end: Date, for family: CLKComplicationFamily) -> CLKComplicationTemplate? {
+        switch (family) {
+        case .modularLarge:
+            let template = CLKComplicationTemplateModularLargeStandardBody();
+            var subjects = "";
+            if lesson.startGrid.timeHash != lesson.endGrid.timeHash, !lesson.startGrid.custom, !lesson.endGrid.custom {
+                subjects += "\(lesson.startGrid.name)-\(lesson.endGrid.name) ";
+            } else {
+                if !lesson.startGrid.custom {
+                    subjects += "\(lesson.startGrid.name) ";
+                }
             }
+            for (index, subject) in lesson.subjects.enumerated() {
+                subjects += subject.name + ((lesson.subjects.count - 1) == index ? " " : " & ");
+            }
+            let subjectTextProvider = CLKSimpleTextProvider(text: "\(subjects)");
+            if let firstSubject = lesson.subjects.first {
+                subjectTextProvider.tintColor = UIColor(hexString: firstSubject.backgroundColor);
+            }
+            template.headerTextProvider = subjectTextProvider
+            template.body1TextProvider = CLKSimpleTextProvider(text: infoStringLesson(lesson: lesson));
+            template.body2TextProvider = CLKRelativeDateTextProvider(date: lesson.end, style: .timer, units: .second);
+            return template;
+        default:
+            return nil;
         }
-        for (index, subject) in lesson.subjects.enumerated() {
-            subjects += subject.name + ((lesson.subjects.count - 1) == index ? " " : " & ");
-        }
-        let subjectTextProvider = CLKSimpleTextProvider(text: "\(subjects)");
-        if let firstSubject = lesson.subjects.first {
-            subjectTextProvider.tintColor = UIColor(hexString: firstSubject.backgroundColor);
-        }
-        template.headerTextProvider = subjectTextProvider
-        template.body1TextProvider = CLKSimpleTextProvider(text: infoStringLesson(lesson: lesson));
-        template.body2TextProvider = CLKRelativeDateTextProvider(date: lesson.end, style: .timer, units: .second);
-        return template;
     }
     
-    func getBreakTemplateFor(for index: Int, inList: [Lesson]) -> CLKComplicationTemplateModularLargeStandardBody {
-        let template = CLKComplicationTemplateModularLargeStandardBody();
-        let nextIndex = index + 1;
-        if nextIndex > (inList.endIndex - 1) || nextIndex < inList.startIndex {
-            template.headerTextProvider = CLKSimpleTextProvider(text: "Break");
-            template.body1TextProvider = CLKSimpleTextProvider(text: "Next: " + "Nothing");
-        } else {
+    func getBreakTemplateFor(for index: Int, inList: [Lesson], for family: CLKComplicationFamily) -> CLKComplicationTemplate? {
+        switch (family) {
+        case .modularLarge:
+            let template = CLKComplicationTemplateModularLargeStandardBody();
+            let nextIndex = index + 1;
+            if nextIndex >= inList.endIndex {
+                return nil;
+            }
             template.headerTextProvider = CLKSimpleTextProvider(text: "Break");
             template.body1TextProvider = CLKSimpleTextProvider(text: "Next: " + infoString(lesson: inList[nextIndex]));
             template.body2TextProvider = CLKRelativeDateTextProvider(date: inList[nextIndex].start, style: .timer, units: .second);
+            return template;
+        default:
+            return nil;
         }
-        return template;
     }
+    
+    
     
     func infoStringLesson(lesson: Lesson) -> String {
         var string = "";
