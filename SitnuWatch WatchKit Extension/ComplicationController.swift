@@ -30,13 +30,33 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     }
     
     func getTimelineStartDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void) {
-        let start = Calendar.current.date(byAdding: .minute, value: -1, to: Calendar.current.date(byAdding: .day, value: -2, to: Date())!);
-        handler(start)
+        let backupStart = Calendar.current.date(byAdding: .minute, value: -1, to: Calendar.current.date(byAdding: .day, value: -2, to: Date())!);
+        self.getWebUntisInstanceAndConfigure().then { webuntis in
+            let (start, _) = webuntis.getTimelineStartAndEnd();
+            if start != nil {
+                handler(start)
+            } else {
+                handler(backupStart);
+            }
+        }.catch { error in
+            print(error);
+            handler(backupStart)
+        };
     }
     
     func getTimelineEndDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void) {
-        let end = Calendar.current.date(byAdding: .minute, value: 1, to: Calendar.current.date(byAdding: .day, value: 2, to: Date())!);
-        handler(end)
+        let backupEnd = Calendar.current.date(byAdding: .minute, value: 1, to: Calendar.current.date(byAdding: .day, value: 2, to: Date())!);
+        self.getWebUntisInstanceAndConfigure().then { webuntis in
+            let (_, end) = webuntis.getTimelineStartAndEnd();
+            if end != nil {
+                handler(end)
+            } else {
+                handler(backupEnd);
+            }
+        }.catch { error in
+            print(error);
+            handler(backupEnd)
+        };
     }
     
     func getPrivacyBehavior(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationPrivacyBehavior) -> Void) {
@@ -100,7 +120,9 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
                     // Try to get next possible lesson first
                     self.getTimelineEndDate(for: complication, withHandler: { timelineEnd in
                         if timelineEnd != nil {
-                            let lessons: [Lesson] = webuntis.getTimetableFromDatabase(between: lastLessonEndDate!, and: timelineEnd!).sorted(by: { $0.start < $1.start });
+                            let lessons: [Lesson] = webuntis.getTimetableFromDatabase(between: lastLessonEndDate!, and: timelineEnd!).filter({ lesson in
+                                return lesson.code != Code.Cancelled;
+                            }).sorted(by: { $0.start < $1.start });
                             if lessons.count >= 1 {
                                 if let breakTemplate = self.getBreakTemplateFor(for: -1, inList: lessons, for: complication.family) {
                                     // Now we have the next template

@@ -58,7 +58,7 @@ DEPENDENCIES:
   - WebUntis (from `https://github.com/TheNoim/WebUntis-Swift.git`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - Alamofire
     - CryptoSwift
     - ESPullToRefresh
@@ -75,15 +75,14 @@ SPEC REPOS:
     - NSString-HYPContainsString
     - NSString-HYPFormula
     - NSString-HYPRelationshipParser
+    - NSString-HYPWordExtractor
     - NSString-ZENInflections
     - PromisesObjC
+    - PromisesSwift
     - Realm
     - RealmSwift
     - SVProgressHUD
     - UIViewController-HYPKeyboardToolbar
-  trunk:
-    - NSString-HYPWordExtractor
-    - PromisesSwift
 
 EXTERNAL SOURCES:
   WebUntis:
@@ -91,7 +90,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   WebUntis:
-    :commit: cf4741afbccdc285b466351bbaffc702219b69fa
+    :commit: 402c1672a5ac4979c809155f2169f30cef48256d
     :git: https://github.com/TheNoim/WebUntis-Swift.git
 
 SPEC CHECKSUMS:
