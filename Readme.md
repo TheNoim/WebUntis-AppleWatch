@@ -1,3 +1,7 @@
+# Deprecated: I rewrote the complete project in this repo: [Project S.I.T.N.U](https://github.com/TheNoim/project-sitnu)
+
+The new repo even includes an TestFlight link. So you don't need to compile the new project by yourself. Maybe I will even at some point submit it to the AppStore. The new project is much faster and more reliable. 
+
 # WebUntis on Apple Watch ⌚
 
 This Client is based on my own [WebUntis Swift Framework](https://github.com/TheNoim/WebUntis-Swift). 
